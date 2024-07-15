@@ -3,7 +3,7 @@ module tf-rabbitmq
 go 1.22.3
 
 require (
-	github.com/gruntwork-io/terratest v0.46.16
+	github.com/gruntwork-io/terratest v0.47.0
 	github.com/rabbitmq/amqp091-go v1.10.0
 	github.com/stretchr/testify v1.9.0
 )
