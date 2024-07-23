@@ -3,6 +3,10 @@ locals {
   secret_vars = yamldecode(sops_decrypt_file(local.sops_file))
 }
 
+include "root" {
+  path = find_in_parent_folders()
+}
+
 inputs = merge(
   local.secret_vars,
   {}

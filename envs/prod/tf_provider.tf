@@ -27,12 +27,6 @@ terraform {
       enforced = true
     }
   }
-
-  backend "s3" {
-    bucket = "soerenschneider-terraform"
-    key    = "rabbitmq-prod"
-    region = "us-east-1"
-  }
 }
 
 provider "rabbitmq" {
