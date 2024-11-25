@@ -5,7 +5,7 @@ go 1.22.3
 require (
 	github.com/gruntwork-io/terratest v0.47.1
 	github.com/rabbitmq/amqp091-go v1.10.0
-	github.com/stretchr/testify v1.9.0
+	github.com/stretchr/testify v1.10.0
 )
 
 require (
