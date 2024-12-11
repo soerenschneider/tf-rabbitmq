@@ -26,7 +26,7 @@ No modules.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_credentials"></a> [credentials](#input\_credentials) | A list of credentials to store, each containing a username and a corresponding password. | <pre>list(<br>    object({<br>      username = string,<br>      password = string<br>  }))</pre> | n/a | yes |
+| <a name="input_credentials"></a> [credentials](#input\_credentials) | A list of credentials to store, each containing a username and a corresponding password. | <pre>list(<br/>    object({<br/>      username = string,<br/>      password = string<br/>  }))</pre> | n/a | yes |
 | <a name="input_metadata"></a> [metadata](#input\_metadata) | An optional set of key-value pairs to attach as metadata to the secrets stored in Vault. | `map(any)` | `null` | no |
 | <a name="input_path_prefix"></a> [path\_prefix](#input\_path\_prefix) | Defines the prefix for paths where secrets will be stored in Vault. | `string` | `"rabbitmq"` | no |
 | <a name="input_vault_kv2_mount"></a> [vault\_kv2\_mount](#input\_vault\_kv2\_mount) | Specifies the mount point for the Vault KV2 (Key-Value) secrets engine. This is the base path where secrets will be stored. | `string` | `"secret"` | no |
